@@ -104,7 +104,7 @@ var PlayersService = function (callback) {
             }]
         var input = input.toLowerCase()
         return playersData.filter(function (player) {
-            if (player.firstname.toLowerCase() == input || player.lastname.toLowerCase() == input || player.fullname.toLowerCase() == input || player.position.toLowerCase() == input || player.pro_team.toLowerCase() == input || teams.name == input || teams.city == input) {
+            if (player.firstname.toLowerCase() == input || player.lastname.toLowerCase() == input || player.fullname.toLowerCase() == input || player.position.toLowerCase() == input || player.pro_team.toLowerCase() == input || teams == input) {
                 if (player.jersey !== undefined) {
                     if (player.photo !== "http://sports.cbsimg.net/images/players/unknown-player-170x170.png") {
                         players.push(player);
@@ -126,22 +126,23 @@ var PlayersService = function (callback) {
 
 
     this.addPlayer = function addPlayer(id) {
-        var players = []
-        for (var i = 0; i < playersData.length; i++) {
-            var myPlayers = playersData[i].id
-            if (myPlayers == id) {
-                myTeam.push(playersData[i])
-                playersData.splice(i, 1)
+        if(myTeam.length < 15){
+            for (var i = 0; i < players.length; i++) {
+                var myPlayers = players[i].id
+                if (myPlayers == id) {
+                    myTeam.push(players[i])
+                    players.splice(i, 1)
+                }
             }
         }
+        return "Your Team is Full"
     }
 
     this.removePlayer = function removePlayer(id) {
-        var players = []
         for (var i = 0; i < myTeam.length; i++) {
             var myPlayers = myTeam[i].id
             if (myPlayers == id) {
-                playersData.push(myTeam[i])
+                players.push(myTeam[i])
                 myTeam.splice(i, 1)
             }
         }
@@ -167,15 +168,6 @@ var PlayersService = function (callback) {
 
         $.getJSON(apiUrl, function (data) {
             playersData = data.body.players;
-            // return {
-            //     id: player.id,
-            //     firstName: player.firstname,
-            //     lastName: player.lastname,
-            //     image: player.photo,
-            //     position: player.position,
-            //     team: player.pro_team
-            // };
-
             console.log('Player Data Ready')
             console.log('Writing Player Data to localStorage')
             localStorage.setItem('playersData', JSON.stringify(playersData))
@@ -185,8 +177,4 @@ var PlayersService = function (callback) {
         });
     }
     loadPlayersData(); //call the function above every time we create a new service
-    console.log(playersData)
-
-
-
 } 
