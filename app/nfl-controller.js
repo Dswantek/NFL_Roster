@@ -62,4 +62,5 @@ function PlayerController() {
         updateMyTeam(playersService.getMyTeam())
         updateRoster(playersService.getPlayers())
     }
+
 }
