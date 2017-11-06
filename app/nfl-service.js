@@ -135,7 +135,7 @@ var PlayersService = function (callback) {
                 }
             }
         }
-        return "Your Team is Full"
+        return players
     }
 
     this.removePlayer = function removePlayer(id) {
