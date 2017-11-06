@@ -1,0 +1,27 @@
+.heading{
+    background-color: green;
+    border: 5px solid black;
+    padding: 25px;
+}
+
+.background{
+    background-color: green;
+    border: 2px solid black;
+}
+
+.player-roster{
+    background-color: green;
+    border: 5px solid black;
+}
+
+.player-card{
+    background-color: white;
+    border: 5px solid black;
+    height: 50vh;
+}
+
+.my-team{
+    background-color: green;
+    border: 5px solid black;
+}
+
