@@ -8,8 +8,9 @@
 .background{
     background-image: url("https://oeo.com/wp-content/uploads/2018/03/football-field.jpg");
     background-repeat: none;
-    background-position: center center;
+    background-position: fixed center;
     background-size: cover;
+    min-height: 100px;
     border: 2px solid black;
 }
 
