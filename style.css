@@ -10,12 +10,12 @@
 }
 
 .player-roster{
-    background-color: green;
+    /* background-color: green; */
     border: 5px solid black;
 }
 
 .player-card{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.25);
     border: 5px solid black;
     height: 100%;
 }
