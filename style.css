@@ -14,20 +14,18 @@
 }
 
 .player-roster{
-    /* background-color: green; */
     border: 5px solid black;
     color: whitesmoke;
 }
 
 .player-card{
-    /* background-color: rgba(255, 255, 255, 0.50); */
+    background-color: rgba(255, 255, 255, 0.50);
     border: 5px solid black;
     height: 100%;
     color: whitesmoke;
 }
 
 .my-team{
-    background-color: rgba(255, 255, 255, 0.50);
     border: 5px solid black;
     color: whitesmoke;
 }
