@@ -7,7 +7,8 @@
 .background{
     background-image: url("https://cdn5.vectorstock.com/i/1000x1000/22/74/american-football-field-background-vector-5012274.jpg");
     background-repeat: none;
-    background-position: cover;
+    background-position: center center;
+    background-size: cover;
     border: 2px solid black;
 }
 
