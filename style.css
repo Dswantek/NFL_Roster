@@ -1,5 +1,5 @@
 .heading{
-    background-color: rgba(0, 204, 0, 0.349);
+    background-color: rgba(2, 255, 2, 0.349);
     border: 5px solid black;
     padding: 25px;
 }
@@ -13,7 +13,7 @@
 }
 
 .player-roster{
-    /* background-color: green; */
+    background-color: green;
     border: 5px solid black;
 }
 
