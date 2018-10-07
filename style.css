@@ -1,11 +1,11 @@
 .heading{
-    background-color: green;
+    background-color: rgba(0, 204, 0, 0.349);
     border: 5px solid black;
     padding: 25px;
 }
 
 .background{
-    background-color: green;
+    background-image: url("https://cdn5.vectorstock.com/i/1000x1000/22/74/american-football-field-background-vector-5012274.jpg");
     border: 2px solid black;
 }
 
