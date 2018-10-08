@@ -1,3 +1,7 @@
+.body{
+    min-height: 100vh;
+}
+
 .heading{
     background-color: rgba(2, 255, 2, 0.5);
     border: 5px solid black;
@@ -10,7 +14,6 @@
     background-repeat: none;
     background-position: fixed center;
     background-size: cover;
-    min-height: 100px;
     border: 2px solid black;
 }
 
